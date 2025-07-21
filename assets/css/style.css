@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Edu Tas Beginner', sans-serif;
+}
+  
+
 /* header */
 header{
-  font-family: 'Edu Tas Beginner', sans-serif;
   padding: 15px;
   background-image: url('/img/wall.png');
   background-position: center;
@@ -23,9 +27,8 @@ h1{
 main{
    background-image: url('/img/cork.png');
    padding: 20px;
+   
 }
-
-/* utilities */
 
 #pin{
   position: absolute;
