@@ -1,0 +1,19 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  font-family: 'Edu Tas Beginner', sans-serif;
+  padding: 15px;
+  background-image: url('/img/wall.png');
+  background-position: center;
+  background-image: cover;
+}
+
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+}
