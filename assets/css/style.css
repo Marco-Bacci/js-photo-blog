@@ -24,8 +24,13 @@ main{
    background-image: url('/img/cork.png');
    padding: 20px;
 }
-.box{
-  background-color: white;
-}
+
 /* utilities */
 
+#pin{
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
