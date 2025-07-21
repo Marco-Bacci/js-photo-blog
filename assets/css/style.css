@@ -6,6 +6,10 @@
 body{
   font-family: 'Edu Tas Beginner', sans-serif;
 }
+
+.date{
+  font-family: 'Sometype Mono', monospace;
+}
   
 
 /* header */

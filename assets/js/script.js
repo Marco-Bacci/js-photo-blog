@@ -17,7 +17,7 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
                 <img id="pin" src="./img/pin.svg" alt="pin">
                 <div id="info" class="box-info text-center">
                   <p class='fs-1'> ${title}</p>
-                  <p>${date}</p>
+                  <p class='date'>${date}</p>
                 </div>
               </div>
             </div>`;
