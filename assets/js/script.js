@@ -9,14 +9,14 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   for (let i = 0; i < cards.length; i++) {
     // destructuring dell'array cards
     const postCard = cards[i];
-    const {title, date, url} = postCard
+    const { title, date, url } = postCard;
 
     postCards += `<div class="col-12 col-md-6 col-lg-4">
               <div class="box p-3 bg-light position-relative">
                 <img id="image" class="img-fluid" src="${url}" alt="" />
                 <img id="pin" src="./img/pin.svg" alt="pin">
-                <div id="info" class="box-info">
-                  <p> ${title} </p>
+                <div id="info" class="box-info text-center">
+                  <p class='fs-1'> ${title}</p>
                   <p>${date}</p>
                 </div>
               </div>
