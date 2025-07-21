@@ -3,17 +3,21 @@ let box = document.getElementById("box-container");
 // chiamata ajax per avere array di oggetti
 axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   const cards = resp.data;
-// definisco variabile che contiene tutti i box da iniettare in pagina
+  // definisco variabile che contiene tutti i box da iniettare in pagina
   let postCards = "";
-// ciclo array e sostituisco le info con le chiavi 
+  // ciclo array e sostituisco le info con le chiavi
   for (let i = 0; i < cards.length; i++) {
+    // destructuring dell'array cards
+    const postCard = cards[i];
+    const {title, date, url} = postCard
+
     postCards += `<div class="col-12 col-md-6 col-lg-4">
               <div class="box p-3 bg-light position-relative">
-                <img id="image" class="img-fluid" src="${cards[i].url}" alt="" />
+                <img id="image" class="img-fluid" src="${url}" alt="" />
                 <img id="pin" src="./img/pin.svg" alt="pin">
                 <div id="info" class="box-info">
-                  <p> ${cards[i].title} </p>
-                  <p>${cards[i].date}</p>
+                  <p> ${title} </p>
+                  <p>${date}</p>
                 </div>
               </div>
             </div>`;
