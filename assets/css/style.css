@@ -22,7 +22,7 @@ header{
 
 h1{
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 600;
 }
 
@@ -40,4 +40,11 @@ main{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-  
+
+/* media Query */
+
+@media all and (max-width:960px ){
+h1{
+  font-size: 100px;
+}
+}
