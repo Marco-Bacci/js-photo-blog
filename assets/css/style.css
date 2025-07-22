@@ -1,26 +1,25 @@
-*{
-  margin: 0 ;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Edu Tas Beginner', sans-serif;
+body {
+  font-family: "Edu Tas Beginner", sans-serif;
 }
 
-.date{
-  font-family: 'Sometype Mono', monospace;
+.date {
+  font-family: "Sometype Mono", monospace;
 }
-  
 
 /* header */
-header{
+header {
   padding: 15px;
-  background-image: url('/img/wall.png');
+  background-image: url("/img/wall.png");
   background-position: center;
   background-image: cover;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 80px;
   font-weight: 600;
@@ -28,13 +27,12 @@ h1{
 
 /* main */
 
-main{
-   background-image: url('/img/cork.png');
-   padding: 20px;
-   
+main {
+  background-image: url("/img/cork.png");
+  padding: 20px;
 }
 
-#pin{
+#pin {
   position: absolute;
   top: 2%;
   left: 50%;
@@ -43,15 +41,14 @@ main{
 
 /* media Query */
 
-@media all and (max-width:960px ){
-h1{
-  font-size: 100px;
-}
+@media all and (max-width: 960px) {
+  h1 {
+    font-size: 100px;
+  }
 }
 
 /* overlay */
-.overlay{
-  
+.overlay {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -67,15 +64,16 @@ h1{
 
 /* utilities */
 
-.vw-35{
+.vw-35 {
   width: 35vw;
   height: auto;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
-.box:hover{
+.box:hover {
   transform: rotate(10deg);
-  transition:0.3s
+  transition: 0.3s;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
 }
