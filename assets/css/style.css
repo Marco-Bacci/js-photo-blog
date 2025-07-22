@@ -51,6 +51,7 @@ h1{
 
 /* overlay */
 .overlay{
+  
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -69,4 +70,8 @@ h1{
 .vw-35{
   width: 35vw;
   height: auto;
+}
+
+.pointer{
+  cursor: pointer;
 }

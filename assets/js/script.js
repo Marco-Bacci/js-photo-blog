@@ -12,7 +12,7 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     const { title, date, url } = postCard;
 
     postCards += `<div class="col-12 col-md-6 col-lg-4">
-              <div class="box p-3 bg-light position-relative">
+              <div class="box p-3 bg-light position-relative pointer">
                 <img id="image" class="img-fluid" src="${url}" alt="" />
                 <img id="pin" src="./img/pin.svg" alt="pin">
                 <div id="info" class="box-info text-center">
@@ -24,3 +24,16 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     box.innerHTML = postCards;
   }
 });
+
+// richiamo tutti gli elementi del dom
+
+const boxes = document.querySelectorAll(".box");
+const overlay = document.getElementById("overlay");
+
+// ciclo gli elementi e assegno event Listener che faccia ricomparire l'verlay al click di ogni box
+
+for (let i = 0; i < boxes.length; i++) {
+  boxes.addEventListener("click", () => {
+    overlay.classList.remove("d-none");
+  });
+}
