@@ -23,17 +23,17 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
             </div>`;
     box.innerHTML = postCards;
   }
+  // richiamo tutti gli elementi del dom
+  const boxes = document.querySelectorAll(".box");
+  const overlay = document.getElementById("overlay");
+  // ciclo gli elementi e assegno event Listener che faccia ricomparire l'verlay al click di ogni box
+  for (let i = 0; i < boxes.length; i++) {
+    boxes[i].addEventListener("click", () => {
+      overlay.classList.remove("d-none");
+    });
+  }
 });
 
-// richiamo tutti gli elementi del dom
 
-const boxes = document.querySelectorAll(".box");
-const overlay = document.getElementById("overlay");
 
-// ciclo gli elementi e assegno event Listener che faccia ricomparire l'verlay al click di ogni box
 
-for (let i = 0; i < boxes.length; i++) {
-  boxes.addEventListener("click", () => {
-    overlay.classList.remove("d-none");
-  });
-}
