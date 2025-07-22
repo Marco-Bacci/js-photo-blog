@@ -32,8 +32,10 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
       overlay.classList.remove("d-none");
     });
   }
+  // richiamo il button per creare eventListener e chudere l'overlay
+  const button = document.getElementById('button')
+  button.addEventListener('click',()=>{
+    overlay.classList.add("d-none");
+    
+  })
 });
-
-
-
-
