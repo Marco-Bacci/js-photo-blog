@@ -75,3 +75,7 @@ h1{
 .pointer{
   cursor: pointer;
 }
+.box:hover{
+  transform: rotate(10deg);
+  transition:0.3s
+}

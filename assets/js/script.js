@@ -12,8 +12,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     const { title, date, url } = postCard;
 
     postCards += `<div class="col-12 col-md-6 col-lg-4">
-              <div class="box p-3 bg-light position-relative pointer">
-                <img id="image" class="img-fluid" src="${url}" alt="" />
+              <div class="box p-3 bg-light position-relative">
+                <img id="image" class="img-fluid pointer" src="${url}" alt="" />
                 <img id="pin" src="./img/pin.svg" alt="pin">
                 <div id="info" class="box-info text-center">
                   <p class='fs-1'> ${title}</p>
@@ -44,7 +44,6 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
       }
     });
   }
-
 
   // richiamo il button per creare eventListener e chudere l'overlay
   const button = document.getElementById("button");
