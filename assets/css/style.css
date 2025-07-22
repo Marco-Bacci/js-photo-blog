@@ -73,6 +73,7 @@ main {
   cursor: pointer;
 }
 .box:hover {
+  z-index: 1;
   transform: rotate(10deg);
   transition: 0.3s;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
