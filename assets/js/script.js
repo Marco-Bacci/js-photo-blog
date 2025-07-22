@@ -26,16 +26,24 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
   // richiamo tutti gli elementi del dom
   const boxes = document.querySelectorAll(".box");
   const overlay = document.getElementById("overlay");
+  // richiamo anche l'immagine grande per poi iniettarla nel html
+  let bigImage = document.getElementById("big-image");
   // ciclo gli elementi e assegno event Listener che faccia ricomparire l'verlay al click di ogni box
+
+  const img = document.querySelectorAll(".img-fluid");
+
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", () => {
       overlay.classList.remove("d-none");
+      for (let j = 0; j < img.length; j++) {
+        bigImage.src = img[j].src;
+      }
     });
   }
+
   // richiamo il button per creare eventListener e chudere l'overlay
-  const button = document.getElementById('button')
-  button.addEventListener('click',()=>{
+  const button = document.getElementById("button");
+  button.addEventListener("click", () => {
     overlay.classList.add("d-none");
-    
-  })
+  });
 });
