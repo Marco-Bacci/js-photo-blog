@@ -37,13 +37,15 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
       overlay.classList.remove("d-none");
       // attribuisco a variabile l'immagine specifica localizzata
       let clickedImg = boxes[i].querySelector(".img-fluid");
-
       // ciclo le immagine per poi attribuirle l'immagine cliccata
       for (let j = 0; j < img.length; j++) {
         bigImage.src = clickedImg.src;
       }
+     
     });
   }
+      
+
 
   // richiamo il button per creare eventListener e chudere l'overlay
   const button = document.getElementById("button");
