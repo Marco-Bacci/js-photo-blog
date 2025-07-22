@@ -12,12 +12,12 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     const { title, date, url } = postCard;
 
     postCards += `<div class="col-12 col-md-6 col-lg-4">
-              <div class="box p-3 bg-light position-relative">
+              <div class="box p-2 bg-light position-relative">
                 <img id="image" class="img-fluid pointer" src="${url}" alt="" />
                 <img id="pin" src="./img/pin.svg" alt="pin">
                 <div id="info" class="box-info text-center">
-                  <p class='fs-1'> ${title}</p>
-                  <p class='date'>${date}</p>
+                <p class='date mt-3 mb-0' >${date}</p>
+                <h4 class='fs-1'> ${title}</h4>
                 </div>
               </div>
             </div>`;
@@ -51,4 +51,3 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     overlay.classList.add("d-none");
   });
 });
-
