@@ -72,9 +72,15 @@ main {
 .pointer {
   cursor: pointer;
 }
+
+/* hover */
 .box:hover {
   z-index: 1;
   transform: rotate(10deg);
   transition: 0.3s;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
+}
+
+.box:hover #pin {
+  display: none
 }

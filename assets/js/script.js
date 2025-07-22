@@ -51,3 +51,4 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((resp) => {
     overlay.classList.add("d-none");
   });
 });
+
